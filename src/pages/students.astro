@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Student Tools" description="Explore AI tools for students. For now, start with Feynman — the AI‑powered Feynman Technique.">
+  <section class="container mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold">Tools for Students</h1>
+    <p class="mt-3 max-w-2xl text-muted-foreground">Browse available tools designed to help you learn faster and prepare better. We’ll add more soon — for now, try Feynman.</p>
+
+    <div class="mt-8 grid gap-6 md:grid-cols-3">
+      <article class="rounded-xl border p-6 flex flex-col">
+        <h3 class="text-lg font-semibold">Feynman — AI‑Powered Feynman Technique</h3>
+        <p class="mt-2 text-sm text-muted-foreground">Speak your knowledge, watch a live knowledge graph build, and get smart feedback on gaps and exam‑important topics.</p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href="/students/feynman" class="inline-flex items-center gap-2 rounded-md border px-4 py-2 text-sm hover:bg-accent">Read more</a>
+          <a href="https://feynman.grifi.in/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-primary-foreground text-sm font-medium shadow-sm hover:bg-primary/90">Visit</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</Layout> 

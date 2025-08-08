@@ -1,0 +1,139 @@
+---
+import Layout from "../layouts/Layout.astro";
+const pageTitle = "Our Philosophy — Student-Centered, Exam-Ready";
+const pageDescription = "Grifi’s philosophy for students, teachers, and institutes: learning, mastery, discipline, health, and exam temperament.";
+---
+
+<Layout {title}={pageTitle} {description}={pageDescription}>
+  <section class="container mx-auto px-4 py-16 md:py-24">
+    <p class="mx-auto mb-3 w-fit rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">Philosophy</p>
+    <h1 class="max-w-3xl text-4xl font-bold leading-tight tracking-tight md:text-5xl">
+      Student-centered learning for competitive excellence
+    </h1>
+    <p class="mt-4 max-w-3xl text-muted-foreground">
+      Grifi is a startup building AI tools for students, teachers, and institutes—with a special focus on
+      competitive exams. We are reimagining how we learn by placing the student at the center of every
+      learning environment. Teachers act as mentors and gurus who guide, challenge, and support. Institutes
+      provide structure, accountability, and community.
+    </p>
+  </section>
+
+  <section id="ecosystem" class="container mx-auto px-4 py-10 md:py-14">
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border bg-card p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">Student at the Center</h3>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Every decision optimizes for the learner’s clarity, momentum, and confidence. Progress
+          should feel visible, personalized, and motivating.
+        </p>
+      </div>
+      <div class="rounded-2xl border bg-card p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">Teacher as Mentor & Guru</h3>
+        <p class="mt-2 text-sm text-muted-foreground">
+          The teacher guides the journey—setting direction, calibrating difficulty, and cultivating
+          discipline and curiosity.
+        </p>
+      </div>
+      <div class="rounded-2xl border bg-card p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">Institute as Scaffolding</h3>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Institutes create the rhythm: timetables, milestones, feedback loops, and peer energy—so
+          serious preparation becomes sustainable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey" class="container mx-auto px-4 py-16 md:py-20">
+    <h2 class="text-3xl font-bold tracking-tight">The learning journey</h2>
+    <p class="mt-3 max-w-2xl text-muted-foreground">
+      Preparation is a journey with distinct, reinforcing parts: learning, mastery, discipline, health, and
+      exam temperament. Our tools strengthen each part while keeping the whole in view.
+    </p>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border bg-card p-6 shadow-sm">
+        <h3 class="text-xl font-semibold">Learning</h3>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Learn actively, not passively. Convert concepts into your own words, solve short problems as you
+          read, teach back to a peer or to yourself. Understanding compounds when you engage.
+        </p>
+      </article>
+
+      <article class="rounded-2xl border bg-card p-6 shadow-sm">
+        <h3 class="text-xl font-semibold">Mastery</h3>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Mastery blends two axes: how much you retain and how difficult the material you can handle is.
+          We support techniques that raise both.
+        </p>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+          <li><span class="font-medium text-foreground">Active recall</span> and <span class="font-medium text-foreground">elaboration</span> to make knowledge retrievable.</li>
+          <li><span class="font-medium text-foreground">Spaced repetition</span> to fight forgetting and stabilize memory.</li>
+          <li><span class="font-medium text-foreground">Interleaving</span> to build flexible understanding across topics.</li>
+          <li>
+            The <span class="font-medium text-foreground">Goldilocks zone</span>: practice that is not too easy, not too hard—just
+            beyond comfort—so skill grows steadily.
+          </li>
+          <li>
+            <span class="font-medium text-foreground">Progressive overload</span>: gradated question sets and mixed reviews that
+            expand depth and breadth over time.
+          </li>
+        </ul>
+      </article>
+
+      <article class="rounded-2xl border bg-card p-6 shadow-sm">
+        <h3 class="text-xl font-semibold">Discipline</h3>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Consistency beats intensity. Schedules, streaks, and tiny wins keep momentum. We design
+          friction-light workflows so showing up is the default.
+        </p>
+      </article>
+
+      <article class="rounded-2xl border bg-card p-6 shadow-sm">
+        <h3 class="text-xl font-semibold">Health</h3>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Learning should fit real life. Some of our tools are designed so students can learn while
+          walking in the park—audio prompts, quick recall, and light-touch reviews.
+        </p>
+      </article>
+
+      <article class="rounded-2xl border bg-card p-6 shadow-sm md:col-span-2">
+        <h3 class="text-xl font-semibold">Exam Temperament</h3>
+        <p class="mt-2 text-sm text-muted-foreground">
+          Tests reward calm, clarity, and pacing. We simulate real conditions, provide time-bound drills,
+          and help you develop a steady, confident rhythm for exam day.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="competitive-exams" class="container mx-auto px-4 py-10 md:py-14">
+    <div class="rounded-2xl border bg-gradient-to-br from-amber-50 to-lime-50 p-8 shadow-sm">
+      <h2 class="text-2xl font-bold tracking-tight">Built for competitive exams</h2>
+      <p class="mt-2 max-w-3xl text-muted-foreground">
+        Competitive preparation demands both speed and depth. Our AI tools craft question sets in the
+        Goldilocks zone, schedule spaced reviews automatically, and surface weak spots before they cost
+        marks. Students, teachers, and institutes see aligned views of progress.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/" class="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-primary-foreground text-sm font-medium shadow-sm hover:bg-primary/90">Explore tools</a>
+        <a href="/students" class="inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium hover:bg-accent">For students</a>
+        <a href="/teachers" class="inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium hover:bg-accent">For teachers</a>
+        <a href="/institutes" class="inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-medium hover:bg-accent">For institutes</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 py-16">
+    <div class="rounded-2xl border p-8 text-center shadow-sm">
+      <h2 class="text-2xl font-semibold">A simple promise</h2>
+      <p class="mx-auto mt-2 max-w-2xl text-muted-foreground">
+        If a student is truly at the center, everything else should get simpler: what to study now,
+        how to practice next, and how to know you are improving. That is what we build.
+      </p>
+      <div class="mt-6">
+        <a href="/" class="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-primary-foreground shadow-sm hover:bg-primary/90">Try our AI tools →</a>
+      </div>
+    </div>
+  </section>
+</Layout> 
