@@ -3,14 +3,270 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Institutes" description="Contact Grifi to supercharge your institute with AI tools.">
-  <section class="container mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold">For Institutes</h1>
-    <p class="mt-3 max-w-2xl text-muted-foreground">Supercharge your institute with AI tools for management, teachers, and students, giving you better trackability and insights.</p>
-
-    <div class="mt-8 rounded-xl border p-6">
-      <h2 class="text-xl font-semibold">Contact Us</h2>
-      <p class="mt-2 text-muted-foreground">Email: <a class="text-primary underline" href="mailto:grifi.projects@gmail.com">grifi.projects@gmail.com</a></p>
-      <p class="mt-4 text-sm text-muted-foreground">Undertone: We help you orchestrate learning at scale — harmonizing data across classrooms to uplift outcomes.</p>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-24">
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="container relative mx-auto px-4">
+      <div class="mx-auto max-w-4xl text-center">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+          <span class="text-lg">🏛️</span>
+          Institute Solutions
+        </div>
+        <h1 class="mb-6 text-5xl font-extrabold leading-tight tracking-tight md:text-6xl lg:text-7xl">
+          Supercharge your institute with
+          <span class="bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 bg-clip-text text-transparent">
+            AI-powered tools
+          </span>
+        </h1>
+        <p class="mx-auto max-w-3xl text-xl text-muted-foreground leading-relaxed">
+          Comprehensive AI solutions for management, teachers, and students with better trackability, 
+          insights, and orchestrated learning at scale.
+        </p>
+      </div>
     </div>
   </section>
-</Layout> 
+
+  <!-- Solutions Section -->
+  <section class="container mx-auto px-4 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Complete Institute Solution</h2>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+        We help you orchestrate learning at scale — harmonizing data across classrooms to uplift outcomes
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Management Tools -->
+      <div class="group relative">
+        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <div class="relative rounded-2xl border bg-card p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-emerald-500/15 text-2xl">
+            📊
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Management Dashboard</h3>
+          <p class="text-muted-foreground leading-relaxed mb-6">
+            Comprehensive analytics and insights across all classrooms, teachers, and students with actionable recommendations.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+              <span class="text-sm font-medium">Institution-wide analytics</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-teal-500"></div>
+              <span class="text-sm font-medium">Performance tracking</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-cyan-500"></div>
+              <span class="text-sm font-medium">Resource optimization</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-2 rounded-full bg-muted px-4 py-2 text-sm text-muted-foreground">
+            <span>⏳</span>
+            Coming soon
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Tools -->
+      <div class="group relative">
+        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <div class="relative rounded-2xl border bg-card p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-teal-500/15 text-2xl">
+            👨‍🏫
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Teacher Empowerment</h3>
+          <p class="text-muted-foreground leading-relaxed mb-6">
+            AI tools for assignment generation, progress tracking, and personalized mentoring across all teachers.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-teal-500"></div>
+              <span class="text-sm font-medium">Assignment generator</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-cyan-500"></div>
+              <span class="text-sm font-medium">Progress analytics</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+              <span class="text-sm font-medium">Classroom Q&A</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-2 rounded-full bg-muted px-4 py-2 text-sm text-muted-foreground">
+            <span>⏳</span>
+            Coming soon
+          </div>
+        </div>
+      </div>
+
+      <!-- Student Tools -->
+      <div class="group relative">
+        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <div class="relative rounded-2xl border bg-card p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-cyan-500/15 text-2xl">
+            🎓
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Student Success</h3>
+          <p class="text-muted-foreground leading-relaxed mb-6">
+            Personalized learning tools for all students with competitive exam focus and progress tracking.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-cyan-500"></div>
+              <span class="text-sm font-medium">Feynman technique</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+              <span class="text-sm font-medium">Smart cards</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-teal-500"></div>
+              <span class="text-sm font-medium">Progress analytics</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-2 rounded-full bg-muted px-4 py-2 text-sm text-muted-foreground">
+            <span>⏳</span>
+            Coming soon
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="container mx-auto px-4 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Why Institutes Choose Grifi</h2>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+        Our comprehensive solution addresses the unique challenges of educational institutions
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="text-center">
+        <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-emerald-500/15 text-2xl">
+          📈
+        </div>
+        <h3 class="text-xl font-bold mb-3">Improved Outcomes</h3>
+        <p class="text-muted-foreground">
+          Data-driven insights lead to better student performance and more effective institutional strategies.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-teal-500/15 text-2xl">
+          ⚡
+        </div>
+        <h3 class="text-xl font-bold mb-3">Operational Efficiency</h3>
+        <p class="text-muted-foreground">
+          Streamline administrative tasks and optimize resource allocation across all departments.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-cyan-500/15 text-2xl">
+          🎯
+        </div>
+        <h3 class="text-xl font-bold mb-3">Competitive Advantage</h3>
+        <p class="text-muted-foreground">
+          Stand out with cutting-edge AI tools that attract top students and faculty.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container mx-auto px-4 py-20">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 p-12 shadow-xl">
+      <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div class="relative">
+        <div class="text-center mb-12">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+            <span class="text-lg">🤝</span>
+            Get Started
+          </div>
+          <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Institute?</h2>
+          <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Let's discuss how Grifi can help you orchestrate learning at scale and uplift outcomes across your institution.
+          </p>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <div class="rounded-2xl border bg-card p-8 shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+            <p class="text-muted-foreground mb-6">
+              Reach out to discuss your institute's needs and explore how our AI tools can benefit your students, teachers, and management.
+            </p>
+            
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+                <span class="text-sm font-medium">Custom implementation</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-teal-500"></div>
+                <span class="text-sm font-medium">Training and support</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-2 w-2 rounded-full bg-cyan-500"></div>
+                <span class="text-sm font-medium">Ongoing partnership</span>
+              </div>
+            </div>
+
+            <a href="mailto:grifi.projects@gmail.com?subject=Institute Partnership Inquiry" class="mt-6 inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 text-primary-foreground font-medium shadow-lg hover:bg-primary/90 transition-all">
+              <span>📧</span>
+              Contact Us
+            </a>
+          </div>
+
+          <div class="rounded-2xl border bg-card p-8 shadow-lg">
+            <h3 class="text-2xl font-bold mb-4">What We Offer</h3>
+            <p class="text-muted-foreground mb-6">
+              Comprehensive AI solutions designed specifically for educational institutions.
+            </p>
+            
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></div>
+                <div>
+                  <span class="text-sm font-semibold">Management Dashboard</span>
+                  <p class="text-xs text-muted-foreground">Institution-wide analytics and insights</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-1 h-2 w-2 rounded-full bg-teal-500"></div>
+                <div>
+                  <span class="text-sm font-semibold">Teacher Tools</span>
+                  <p class="text-xs text-muted-foreground">Assignment generation and progress tracking</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-1 h-2 w-2 rounded-full bg-cyan-500"></div>
+                <div>
+                  <span class="text-sm font-semibold">Student Success</span>
+                  <p class="text-xs text-muted-foreground">Personalized learning and exam preparation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+</style> 

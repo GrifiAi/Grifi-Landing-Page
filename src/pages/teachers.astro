@@ -3,17 +3,235 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Teacher Tools — Coming Soon" description="AI tools for teachers are coming soon.">
-  <section class="container mx-auto flex min-h-[70vh] flex-col items-center justify-center px-4 py-24 text-center">
-    <span class="mb-4 rounded-full border px-3 py-1 text-xs text-muted-foreground">Teachers</span>
-    <h1 class="text-4xl font-bold sm:text-5xl">AI tools for teachers</h1>
-    <p class="mt-4 max-w-xl text-muted-foreground">
-      We’re building powerful tools to help you mentor students, generate assignments, and track progress.
-    </p>
-
-    <div class="mt-8 w-full max-w-md rounded-xl border p-8">
-      <p class="text-lg font-medium">Coming soon</p>
-      <p class="mt-1 text-sm text-muted-foreground">Sign up to get notified when we launch.</p>
-      <a href="/" class="mt-6 inline-block rounded-md bg-primary px-4 py-2 text-primary-foreground hover:bg-primary/90">Back to Home</a>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 py-24">
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="container relative mx-auto px-4">
+      <div class="mx-auto max-w-4xl text-center">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+          <span class="text-lg">👨‍🏫</span>
+          Teacher Tools
+        </div>
+        <h1 class="mb-6 text-5xl font-extrabold leading-tight tracking-tight md:text-6xl lg:text-7xl">
+          AI-powered tools for
+          <span class="bg-gradient-to-r from-teal-600 via-emerald-600 to-cyan-600 bg-clip-text text-transparent">
+            effective teaching
+          </span>
+        </h1>
+        <p class="mx-auto max-w-3xl text-xl text-muted-foreground leading-relaxed">
+          Empower your teaching with AI tools that help you mentor students more effectively, 
+          generate personalized assignments, and track progress with precision.
+        </p>
+      </div>
     </div>
   </section>
-</Layout> 
+
+  <!-- Coming Soon Section -->
+  <section class="container mx-auto px-4 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Tools We're Building</h2>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+        We're developing powerful AI tools specifically designed to enhance your teaching effectiveness
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Assignment Generator -->
+      <div class="group relative">
+        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <div class="relative rounded-2xl border bg-card p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-emerald-500/15 text-2xl">
+            📝
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Assignment Generator</h3>
+          <p class="text-muted-foreground leading-relaxed mb-6">
+            Create differentiated practice at the right difficulty level for each student using our Goldilocks model.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+              <span class="text-sm font-medium">Personalized difficulty</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-teal-500"></div>
+              <span class="text-sm font-medium">Auto-generated questions</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-cyan-500"></div>
+              <span class="text-sm font-medium">Progress tracking</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-2 rounded-full bg-muted px-4 py-2 text-sm text-muted-foreground">
+            <span>⏳</span>
+            Coming soon
+          </div>
+        </div>
+      </div>
+
+      <!-- Classroom Q&A -->
+      <div class="group relative">
+        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <div class="relative rounded-2xl border bg-card p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-teal-500/15 text-2xl">
+            💬
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Classroom Q&A</h3>
+          <p class="text-muted-foreground leading-relaxed mb-6">
+            Context-aware chat for your class materials. Students ask; your curated content answers.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-teal-500"></div>
+              <span class="text-sm font-medium">Syllabus-grounded answers</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-cyan-500"></div>
+              <span class="text-sm font-medium">Source citations</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+              <span class="text-sm font-medium">24/7 student support</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-2 rounded-full bg-muted px-4 py-2 text-sm text-muted-foreground">
+            <span>⏳</span>
+            Coming soon
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Analytics -->
+      <div class="group relative">
+        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <div class="relative rounded-2xl border bg-card p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-cyan-500/15 text-2xl">
+            📊
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Progress Analytics</h3>
+          <p class="text-muted-foreground leading-relaxed mb-6">
+            Visualize mastery, time-on-task, and weak topics so you can mentor with precision.
+          </p>
+          
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-cyan-500"></div>
+              <span class="text-sm font-medium">Mastery dashboards</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+              <span class="text-sm font-medium">Weak spot alerts</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-teal-500"></div>
+              <span class="text-sm font-medium">Intervention insights</span>
+            </div>
+          </div>
+
+          <div class="inline-flex items-center gap-2 rounded-full bg-muted px-4 py-2 text-sm text-muted-foreground">
+            <span>⏳</span>
+            Coming soon
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="container mx-auto px-4 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Why Teachers Choose Grifi</h2>
+      <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+        Our tools are designed to amplify your teaching effectiveness and reduce administrative burden
+      </p>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="text-center">
+        <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-emerald-500/15 text-2xl">
+          🎯
+        </div>
+        <h3 class="text-xl font-bold mb-3">Personalized Mentoring</h3>
+        <p class="text-muted-foreground">
+          AI insights help you identify and address individual student needs with precision and efficiency.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-teal-500/15 text-2xl">
+          ⚡
+        </div>
+        <h3 class="text-xl font-bold mb-3">Time Savings</h3>
+        <p class="text-muted-foreground">
+          Automate routine tasks like assignment generation and progress tracking to focus on what matters most.
+        </p>
+      </div>
+
+      <div class="text-center">
+        <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-cyan-500/15 text-2xl">
+          📈
+        </div>
+        <h3 class="text-xl font-bold mb-3">Better Outcomes</h3>
+        <p class="text-muted-foreground">
+          Data-driven insights lead to improved student performance and more effective teaching strategies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign Up Section -->
+  <section class="container mx-auto px-4 py-20">
+    <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 p-12 shadow-xl">
+      <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      <div class="relative text-center">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+          <span class="text-lg">🚀</span>
+          Early Access
+        </div>
+        <h2 class="text-4xl font-bold mb-4">Be Among the First</h2>
+        <p class="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+          Sign up to get notified when our teacher tools launch and receive early access to beta features.
+        </p>
+        
+        <div class="w-full max-w-md mx-auto rounded-xl border bg-card p-8 shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">Coming Soon</h3>
+          <p class="text-muted-foreground mb-6">
+            We're building powerful tools to help you mentor students, generate assignments, and track progress with AI precision.
+          </p>
+          
+          <div class="space-y-4 mb-6">
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
+              <span class="text-sm">Assignment Generator</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-teal-500"></div>
+              <span class="text-sm">Classroom Q&A</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="h-2 w-2 rounded-full bg-cyan-500"></div>
+              <span class="text-sm">Progress Analytics</span>
+            </div>
+          </div>
+
+          <a href="mailto:grifi.projects@gmail.com?subject=Teacher Tools Early Access" class="inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3 text-primary-foreground font-medium shadow-lg hover:bg-primary/90 transition-all">
+            <span>📧</span>
+            Get Early Access
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+</style> 
